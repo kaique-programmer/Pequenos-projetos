@@ -1,5 +1,4 @@
-// debug app 
-function log(message) {
+function log(message) {// debug app 
   console.log(' -- ' + message)
 }
 
@@ -7,7 +6,7 @@ const cards = document.querySelectorAll('.card')
 const dropzones = document.querySelectorAll('.dropzone')
 
 // our cards
-cards.forEach(card => {
+cards.forEach(card => { // Para cada função ouvinte de arrasto.
   card.addEventListener('dragstart', dragstartCard)
   card.addEventListener('drag', dragCard)
   card.addEventListener('dragend', dragendCard)
