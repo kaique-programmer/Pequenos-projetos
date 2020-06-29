@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  font-display: optional;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  max-height: 36px;
+}
+
+a, a:hover {
+  color: inherit;
+  background-color: #d4431f;
+  transition: 1s;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  z-index: 10;
+}
+
+section {
+  border-bottom: 8px solid;
+}
+
+.btn-login {
+  background-color: #e50914;
+  padding: 7px 17px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 2px;
+  list-style: none;
+}
+
+.box-background, .box .content {
+  height: 83.27vh;
+}
+
+.box .content h1 {
+  font-size: 3.125rem;
+}
+
+.box .content h2 {
+  font-size: 1.625rem;
+}
+
+.box .content h3 {
+  font-size: 1.2rem;
+}
+
+.box .box-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.4);
+  background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+  background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+
+.form-control {
+  height: 60px;
+}
+
+.sign-in .input-group-text {
+  background-color: #e50914;
+  border: solid #e50914;
+  cursor: pointer;
+}
+
+.sign-in .icon-svg {
+  width: 1rem;
+  height: 1.2rem;
+}
