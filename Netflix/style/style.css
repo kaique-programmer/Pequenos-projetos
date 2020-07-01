@@ -11,6 +11,12 @@ body {
   max-height: 36px;
 }
 
+@media (max-width: 548px) {
+  .logo {
+    max-height: 24px;
+  }
+}
+
 a, a:hover {
   color: inherit;
   background-color: #d4431f;
@@ -37,8 +43,21 @@ section {
   list-style: none;
 }
 
+@media (max-width: 548px) {
+  .btn-login {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
 .box-background, .box .content {
   height: 83.27vh;
+}
+
+@media (max-width: 548px) {
+  .box-background {
+    height: 64vh;
+  }
 }
 
 .box .content h1 {
@@ -51,6 +70,18 @@ section {
 
 .box .content h3 {
   font-size: 1.2rem;
+}
+
+@media (max-width: 548px){
+  .box .content h1 {
+    font-size: 1.7rem;
+  }
+  .box .content h2 {
+    font-size: 1.125rem;
+  }
+  .box .content h3 {
+    font-size: 0 7%;
+  }
 }
 
 .box .box-background img {
@@ -78,6 +109,13 @@ section {
   height: 60px;
 }
 
+@media (max-width: 548px) {
+  .form-control {
+    height: 48px;
+    flex: none !important
+  }
+}
+
 .sign-in .input-group-text {
   background-color: #e50914;
   border: solid #e50914;
@@ -87,4 +125,17 @@ section {
 .sign-in .icon-svg {
   width: 1rem;
   height: 1.2rem;
+}
+
+@media (max-width: 548px) {
+  .sign-in .input-group-text  {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2px;
+    min-height: 44px;
+  }
+  .sign-in .icon-svg {
+    width: 1rem;
+    height: 0.8rem;
+  }
 }
