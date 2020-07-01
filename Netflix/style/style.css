@@ -30,7 +30,7 @@ header {
 }
 
 section {
-  border-bottom: 8px solid;
+  border-bottom: 8px solid rgb(201, 18, 33)
 }
 
 .btn-login {
@@ -138,4 +138,93 @@ section {
     width: 1rem;
     height: 0.8rem;
   }
+}
+
+section .title {
+  font-size: 3.125rem;
+}
+
+section .subtitle {
+  font-size: 1.625rem;
+}
+
+.video-tv img {
+  position: relative;
+  z-index: 1;
+}
+
+.video-tv video {
+  position: absolute;
+  left: 15.5%;
+  top: 21%;
+  max-width: 70.5%;
+}
+
+@media (max-width: 548px) {
+  section .title {
+    font-size: 1.625rem;
+    text-align: center;
+  }
+  section .subtitle {
+    font-size: 1.125rem;
+    text-align: center;
+    padding: 0 2%;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .mobile-card {
+    left: -15px;
+  }
+}
+
+.mobile-card {
+  position: absolute;
+    left: 50%;
+    bottom: 8%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    padding: .25em .65em;
+    border: 2px solid rgba(255,255,255,.25);
+    -webkit-box-shadow: 0 0 2em 0 #000;
+    -moz-box-shadow: 0 0 2em 0 #000;
+    box-shadow: 0 0 2em 0 #000;
+    -webkit-border-radius: .75em;
+    -moz-border-radius: .75em;
+    border-radius: .75em;
+}
+
+.mobile-card .card-image img {
+  height: 4.5rem;
+}
+
+.mobile-card h5 {
+  font-size: 1rem;
+}
+
+.mobile-card label {
+  font-size: 0.9em;
+  color: #0071eb;
+}
+
+.mobile-card .gif img {
+  width: 3em;
 }
