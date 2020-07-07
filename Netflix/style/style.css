@@ -17,14 +17,6 @@ body {
   }
 }
 
-a, a:hover {
-  color: inherit;
-  background-color: #d4431f;
-  transition: 1s;
-  list-style: none;
-  text-decoration: none;
-}
-
 header {
   z-index: 10;
 }
@@ -72,7 +64,7 @@ section {
   font-size: 1.2rem;
 }
 
-@media (max-width: 548px){
+@media (max-width: 548px) {
   .box .content h1 {
     font-size: 1.7rem;
   }
@@ -148,7 +140,7 @@ section .subtitle {
   font-size: 1.625rem;
 }
 
-.video-tv img {
+.video-tv img, .video-desktop img {
   position: relative;
   z-index: 1;
 }
@@ -158,6 +150,13 @@ section .subtitle {
   left: 15.5%;
   top: 21%;
   max-width: 70.5%;
+}
+
+.video-desktop video {
+  position: absolute;
+  left: 18%;
+  max-width: 64%;
+  top: 11%;
 }
 
 @media (max-width: 548px) {
@@ -227,4 +226,85 @@ section .subtitle {
 
 .mobile-card .gif img {
   width: 3em;
+}
+
+.perguntas .accordion button {
+  background:#303030;
+  padding: 1.1rem 2.2rem 1.1rem 1.2rem;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  position: relative;
+  color: #fff;
+  outline: none;
+  font-size: 1.625rem;
+}
+
+.perguntas .accordion button span {
+  position: absolute;
+  font-size: 4rem;
+  line-height: 1.1;
+  right: 15px;
+  bottom: 4px;
+}
+
+.perguntas .accordion button[aria-expanded="true"] span {
+  transform: rotate(135deg);
+}
+
+.perguntas .accordion .card-body {
+  background:#303030;
+  font-size: 1.625rem;
+  color: #fff;
+  white-space: pre-line;
+  margin-top: 2px;
+}
+
+@media (max-width: 548px){
+  .perguntas {
+    padding: 0;
+  }
+  .perguntas .accordion button {
+    font-size: 1.125rem;
+    padding: 0.8rem 2.2rem 0.8rem 1.2rem;
+  }
+  .perguntas .accordion .card-body {
+    font-size: 1.125rem;
+  }
+  .perguntas .accordion button span {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .perguntas .subtitle {
+    padding: 0 7%;
+  }
+  .form-group {
+    margin-bottom: 8px;
+  }
+}
+
+footer, footer a {
+  color: #303030;
+}
+
+footer a {
+  font-size: 13px;  
+}
+
+footer select {
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  color: #999;
+  font-size: 16px;
+  padding: 12px 26px 12px 50px;
+  line-height: 1.7;
+}
+
+footer .select-globe img {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 15px;
+  height: 16px;
 }
