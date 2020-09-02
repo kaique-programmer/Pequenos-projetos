@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAP</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styleMenu.css">
+</head>
+
+<body>
+
+  <div class="linha">
+    <header>
+      <div class="coluna col4">
+
+      </div>
+      <div class="coluna col8">
+        <nav>
+          <ul>
+            <li><a href="login.html"><span class="primeiro"><i class="icon icon-home"></i></span>Login</a></li>
+            <li><a href="corporação.html"><span class="segundo"><i class="icon icon-book"></i></span>Institucional
+                Fatec</a>
+              <ul>
+                <li><a href="#">Item #1</a></li>
+                <li><a href="#">Item #2</a></li>
+                <li><a href="#">Item #3</a></li>
+                <li><a href="#">Item #4<a></li>
+                <li><a href="#">Item #5</a></li>
+              </ul>
+            </li>
+            <li><a href="serviços.html"><span class="terceiro"><i
+                    class="icon icon-spanner-outline"></i></span>Requerimento</a></li>
+            <li><a href="sobre.html"><span class="quarto"><i class="icon icon-group"></i></span>Sobre</a></li>
+            <li><a href="contato.html"><span class="quinto"><i class="icon icon-phone"></i></span>Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  </div>
+
+  <div class="row justify-content-center mb-5">
+    <h1 class="text-muted">Requerimento Global</h1>
+  </div>
+
+  <div class="row justify-content-center mb-5">
+
+    <div class="col-sm-12 col-md-10 col-lg-8">
+
+      <form method="GET">
+
+        <div class="form-row">
+
+          <div class="form-group col-sm-6">
+            <label for="inputCpf"><i class="fas fa-signature mr-1"></i>CPF:</label>
+            <input type="text" class="form-control" id="inputCpf" placeholder="Digite o CPF">
+          </div>
+
+          <div class="form-group col-sm-6">
+
+            <label for="inputRA"><i class="fas fa-signature mr-1"></i>RA:</label>
+            <input type="text" class="form-control" id="inputRA" placeholder="Digite o RA">
+
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-sm-6">
+            <label for="inputNome"><i class="fas fa-signature mr-1"></i>Nome:</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="Digite o Nome">
+          </div>
+
+          <div class="form-group col-sm-6">
+
+            <label for="inputCurso"><i class="far fa-flag mr-1"></i>Curso:</label>
+            <select id="" class="form-control">
+              <option selected>Escolha</option>
+              <option value="SP">Gestão de Tecnologia da Informação</option>
+              <option value="RJ">Secretariado</option>
+              <option value="MG">Gestão Comercial</option>
+            </select>
+
+          </div>
+
+          <div class="form-group col-sm-2">
+
+            <label for="inputTurno"><i class="far fa-flag mr-1"></i>Turno:</label>
+            <select id="" class="form-control">
+              <option selected>Escolha</option>
+              <option value="SP">Manhã</option>
+              <option value="RJ">Tarde</option>
+              <option value="MG">Noite</option>
+            </select>
+
+          </div>
+
+          <div class="form-group col-sm-4">
+
+            <label for="inputEmail"><i class="fas fa-signature mr-1"></i>E-mail:</label>
+            <input type="text" class="form-control" id="inputEmail" placeholder="Digite o E-mail">
+
+          </div>
+
+          <div class="form-group col-sm-3">
+
+            <label for="inputCell"><i class="fas fa-signature mr-1"></i>Celular:</label>
+            <input type="text" class="form-control" id="inputCell" placeholder="Digite o número de celular">
+
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12">
+            <label for="inputOpcaoRequerimentoGlobal"><i class="far fa-flag mr-1"></i>Opções de Requerimento
+              Global:</label>
+            <select id="" class="form-control">
+              <option selected>Escolha</option>
+              <option value="SP">1) Benefícios da Lei 6.202/75(Gestante/Prole a partir do 8° mês) - Anexar Atestado
+                Médico
+              </option>
+              <option value="RJ"> - </option>
+              <option value="RJ"> - </option>
+              <option value="MG">Outros (justificar e caso tenha comprovante anexá-lo)</option>
+            </select>
+          </div>
+        </div><br>
+
+        <div class="form-row">
+          <div class="form-group col-sm-12">
+            <label for="inputTrancamentoMatricula"><i class="far fa-flag mr-1"></i>Trancamento de Matrícula:</label>
+            <select id="" class="form-control">
+              <option selected>Escolha</option>
+              <option value="SP">Falta de Base Teórica para acompanhar o curso</option>
+              <option value="RJ"> - </option>
+              <option value="RJ"> - </option>
+              <option value="MG">Outros motivos</option>
+            </select>
+          </div>
+        </div><br>
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+
+            <label for="inputFile"><i class="fas fa-signature mr-1"></i>File:</label>
+            <input type="file" class="form-control" id="inputFile">
+
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+
+            <label for="exampleFormControlTextarea1">Justificar abaixo o motivo do requerimento:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+        </div>
+
+        <div class="form-row">
+
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-info">Enviar</button>
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
