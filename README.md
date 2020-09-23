@@ -22,3 +22,5 @@ A página relativamente parece ser simples, mas, ao observar em detalhes técnic
 - **Netflix**: O projeto tem o intuito de clonar a home-page do Netflix assim que o usuário entra na página de inscrição ou teste de 30 dias e outras informações correlatas ao serviço de streaming. Na aplicação foi utilizado o framework *bootstrap*, *html* e *css* para montar o layout e customizar alguns componentes individualmente para dar os efeitos idênticos ao da Netflix.
 
 - **youtube-clone-twitch-app**: O projeto visa clonar a interface da Twitch.tv, sendo utilizado alguns conceitos de component, navigation, flex-layout entre outros aspectos referentes a aplicação.
+
+- **Projeto AAP - Sistemas Integrados de Gestão**: AAP (Atividade Autônoma de Projeto) tem o intuito de apresentar um protótipo visual de como as telas - interfaces, irão interagir de modo que possa atender as necessidades mais relevantes do usuário.

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="content first-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Bem-Vindo!</h2>
+        <p class="description description-primary">Continue conectado conosco</p>
+        <p class="description description-primary">Faça login com suas informações pessoais</p>
+        <button id="signin" class="btn btn-primary">Entrar</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">Cadastrar-se</h2>
+        <div class="social-media">
+          <ul class="list-social-media">
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-facebook-f"></i>
+              </li>
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+            </a>
+          </ul>
+        </div><!-- social media -->
+        <p class="description description-second">Ou use seu e-mail para registro</p>
+        <form class="form">
+
+          <label class="label-input" for="">
+            <i class="far fa-user icon-modify"></i>
+            <input type="text" placeholder="Nome" id="txtUser">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" pattern="w+@w+.w{2,3}" placeholder="Email" id="txtEmail">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Senha" id="txtPassword">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-lock-open icon-modify"></i>
+            <input type="password" placeholder="Confirme a senha" id="txtPasswordConfirm">
+          </label>
+
+
+          <button class="btn btn-second" onclick="validationRegistration()">Cadastrar</button>
+        </form>
+      </div><!-- second column -->
+    </div><!-- first content -->
+    <div class="content second-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Olá, estudante!</h2>
+        <p class="description description-primary">Preencha os campos de cadastro</p>
+        <p class="description description-primary">e fique por dentro das novidades da Fatec</p>
+        <button id="signup" class="btn btn-primary">Cadastrar</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second"><img src="imgs/fatec.jpg" width="100px" height="80px"></h2>
+        <div class="social-media">
+          <ul class="list-social-media">
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-facebook-f"></i>
+              </li>
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+            </a>
+          </ul>
+        </div><!-- social media -->
+        <p class="description description-second">Ou use sua conta de e-mail:</p>
+        <form class="form">
+
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" pattern="w+@w+.w{2,3}" placeholder="RA ou Email" id="txtNumberRegistrationLogin">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Senha" id="txtPasswordLogin">
+          </label>
+
+          <a class="password" href="#">Esqueceu sua senha?</a>
+          <a href="index.html" class="btn btn-second">Entrar</a>
+        </form>
+      </div><!-- second column -->
+    </div><!-- second-content -->
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
