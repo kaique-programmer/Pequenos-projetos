@@ -13,7 +13,7 @@ const UserRow: React.FC<UserProps> = ({
 }) => {
   return (
     <User>
-      <Avatar />
+      <Avatar className={isBot ? 'bot' : ''} />
 
       <strong>{nickname}</strong>
 
@@ -28,8 +28,17 @@ const UserList: React.FC = () => {
       <Role>Disponível - 1</Role>
       <UserRow nickname="Kaique oliver" />
 
-      <Role>Offiline</Role>
-      <UserRow nickname="futebolatras" isBot />
+      <Role>Offline</Role>
+      <UserRow nickname="futebolatras" isBot /> 
+      <Role>Offline</Role>
+      <UserRow nickname="catcholatras" isBot />
+      <Role>Offline</Role>
+      <UserRow nickname="ciriguela" isBot />
+      <Role>Offline</Role>
+      <UserRow nickname="pangua" isBot />
+      <Role>Offline</Role>
+      <UserRow nickname="bicu-asa" isBot />
+
     </Container>
   );
 };
