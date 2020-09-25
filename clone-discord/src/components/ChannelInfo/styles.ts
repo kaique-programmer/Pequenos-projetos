@@ -37,7 +37,7 @@ export const Separator = styled.div`
   background-color: var(--white);
   opacity: 0.2;
   
-  margin: 0 13x;
+  margin: 0 13px;
 `;
 
 export const Description = styled.span`
