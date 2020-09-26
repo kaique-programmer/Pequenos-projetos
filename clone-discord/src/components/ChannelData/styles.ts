@@ -15,7 +15,7 @@ export const Messages = styled.div`
   display: flex;
   flex-direction: column;
   
-  max-height: calc(100vh -46px -68px);
+  max-height: calc(100vh - 46px - 68px);
   overflow-y: scroll;
 
   padding: 20px 0;
@@ -66,6 +66,8 @@ export const Input = styled.input`
 export const InputIcon = styled(AlternateEmail)`
   width: 24px;
   height: 24px;
+
+  margin-top: -5px;
 
   color: var(--gray);
 `;
