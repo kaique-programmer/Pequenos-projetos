@@ -14,12 +14,12 @@ export const Container = styled.div`
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--tertiary);
-    border-radius: 4px;
+    background-color: var(--white);
+    border-radius: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -81,10 +81,12 @@ export const Avatar = styled.div`
   flex-shrink: 0;
 
   width: 32px;
+  height: 32px;
+  
   border-radius: 50%;
   background-color: var(--primary);
 
   &.bot {
-    background-color: var(--mention-datail);
+    background-color: var(--mention-detail);
   }
 `;

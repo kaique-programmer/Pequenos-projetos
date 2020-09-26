@@ -28,17 +28,22 @@ const UserList: React.FC = () => {
       <Role>Disponível - 1</Role>
       <UserRow nickname="Kaique oliver" />
 
-      <Role>Offline</Role>
+      <Role>Offline - 33</Role>
       <UserRow nickname="futebolatras" isBot /> 
-      <Role>Offline</Role>
-      <UserRow nickname="catcholatras" isBot />
-      <Role>Offline</Role>
-      <UserRow nickname="ciriguela" isBot />
-      <Role>Offline</Role>
-      <UserRow nickname="pangua" isBot />
-      <Role>Offline</Role>
-      <UserRow nickname="bicu-asa" isBot />
-
+      <Role>Offline - 35</Role>
+      <UserRow nickname="catcholatras" />
+      <Role>Offline - 54</Role>
+      <UserRow nickname="ciriguela" />
+      <Role>Offline - 57</Role>
+      <UserRow nickname="pangua" />
+      <Role>Offline - 66</Role>
+      <UserRow nickname="bicu-asa" />
+      <Role>Offline - 77</Role>
+      <UserRow nickname="nedauras" />
+      <Role>Offline - 82</Role>
+      <UserRow nickname="burrão" />
+      <Role>Offline - 90</Role>
+      <UserRow nickname="buneco" />
     </Container>
   );
 };
