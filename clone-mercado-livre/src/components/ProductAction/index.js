@@ -8,4 +8,4 @@ export default function ProductAction() {
       <h1>ProductAction</h1>
     </Container>
   );
-};
+}

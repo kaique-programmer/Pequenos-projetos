@@ -8,4 +8,4 @@ export default function Seller() {
       <h1>Seller</h1>
     </Container>
   );
-};
+}
