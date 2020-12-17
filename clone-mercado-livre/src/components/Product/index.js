@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import tshirtImage from '../../assets/tshirt.png';
+import SellerInfo from '../SellerInfo';
 
 import {
   Container,
@@ -36,7 +37,7 @@ export default function Product() {
 
         <Column>
           {/* <ProductAction /> */}
-          {/* <SellerInfo /> */}
+          <SellerInfo />
 
           <WarrantySection />
           <WarrantySection />
