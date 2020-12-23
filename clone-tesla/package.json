@@ -43,6 +43,14 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.7"
+    "@types/styled-components": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.1"
   }
 }
