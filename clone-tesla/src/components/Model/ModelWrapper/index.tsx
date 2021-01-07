@@ -1,8 +1,9 @@
 import React, { useCallback, useRef, useState } from 'react';
 
 import ModelsContext, { CarModel } from '../ModelsContext';
+import ModelOverlay from '../ModelOverlay';
 
-import { Container, OverlaysRoot, ModelOverlay } from './styles';
+import { Container, OverlaysRoot } from './styles';
 
 const ModelWrapper: React.FC = ({ children }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -22,7 +23,7 @@ const ModelWrapper: React.FC = ({ children }) => {
   const getModelByName = useCallback(
     (modelName: string) => {
       return (
-        registeredModels.find((item) => item.modelsName === modelName) || null
+        registeredModels.find((item) => item.modelName === modelName) || null
       );
     },
     [registeredModels]
