@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<title>PS4 vs xbox one</title>
+<meta charset="utf-8">
+<meta name="description" content="aula de introdução a WEB,html,css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+	<header id="cabeçalho">
+    	<nav id="menu">
+        	<ul id="listasmenu">
+            	<li>
+                	<a href="#">link</a>
+                    <a href="#">link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrapper"><!--tudo dentro desta div-->
+        <div class="left">
+                <div id="indice">
+                    <main>
+                        <ol>
+                            <li><a href="#">lista ordenada</a></li>
+                            <li><a href="#">lista ordenada</a></li>
+                        </ol>
+                        <figure>
+                            <figcaption>
+                                <img src="" alt="descrição da imagem" />
+                            </figcaption>
+                        </figure>
+                            <aside>
+                                <p>Gerenciamento do conteudo</p>
+                            </aside>
+                            <footer>
+                                <p>Nome da postagem e do autor</p>
+                                <time datetime="2016-11-14 13:00">Data da Postagem</time>
+                            </footer>
+                    </main>
+                </div>
+        </div>
+        
+        <div class="right">        
+            <div id="indice-section">
+                <section>
+                    <article>
+                        <h1>Titulo do artigo</h1>
+                        <p>Subtitulo do artigo</p><!--pode-se utilizar também h2-->
+                    </article>
+                </section>
+                <aside>
+                    <section>
+                        <article><!--no caso o article é preferencial-->
+                        <h2>Seção de artigos</h2>
+                        <p>conteudo da seção (talvez do artigo também)</p>
+                        </article>
+                    </section>
+                </aside>
+                <p>
+                    Esse é um parágrafo<br>
+                    Frase em negrito<b>negrito</b> ou <strong>negrito</strong><br>
+                    <i>Itálico</i><br>
+                    <big>texto grande</big><br>
+                    <small>texto pequeno</small><br>
+                    5<sup>2</sup> = 25<br>
+                    H<sub>2</sub>O<br>
+                </p>
+            </div>
+            
+            <div id="imagem">
+                <h2>Imagem</h2>
+                <img src="SITE FINAL/img/thumb-pequena.jpg" alt="Imagem ilustrativa" style="margin-bottom: -50px; width: 300px; height: 300px;">
+            </div>
+            
+            <div id="form-infoeasy">
+                <h2 style="margin-top: 50px;">Formulário</h2>
+                <form action="#" method="get">
+                    <p>
+                        <!--label for serve para poder clicar e corresponder como se tivesse clicando na própria caixa de texto-->
+                        <label for="cBusca">Busca</label> <input type="text" class="input-text" id="cBusca" placeholder="Faça a busca" maxlength="20" min="0" name="busca">
+                        <button type="submit">Buscar</button>
+                    </p>
+                </form>
+            </div>   
+           
+           		<div id="form-contato">
+                    <h1>Formulário de Contato</h1>
+                        <form action="#" method="post">
+                            <p><label for="cEmail">Email</label> <input type="text" id="cEmail" name="email" placeholder="digite seu email" maxlength="40" min="0" class="input-text"></p>
+                            <p><label for="cIdade">Idade</label> <input type="number" id="cIdade" placeholder="indique sua idade" name="idade" class="input-num"></p>
+                            <p><label>Assunto</label> <select name="assunto">
+                                                            <option value="1">Problemas técnicos</option>
+                                                            <option value="2">Vendas</option>
+                                                            <option value="3">Departamento</option>
+                                                            <option value="4">outros</option>
+                                                      </select></p>
+                             <p><label for="cMsg">Reclamação</label></p> 
+                                <p><textarea id="cMsg" cols="45" rows="5" placeholder="coloque aqui sua reclamação" name="reclama"></textarea><p><input type="button" value="Enviar"></p>
+                             </p>
+                        </form>
+                </div><!--fechamento contato-->
+            </div><!--fechamento right-->
+    </div><!--fechamento wrapper-->
+    <footer style="width: 100%; margin: 20px auto 20px auto 20px auto 20px auto; background-color:#B92833; margin-top: 100%; padding: 10px;">
+    	<address>
+        	<h3>Maiores esclarecimentos entre em contato</h3><a href="#menu">Contato</a>
+            <span><p>Copyright - todos os direitos reservados </p></span>
+        </address>
+    </footer>
+</body>
+</html>

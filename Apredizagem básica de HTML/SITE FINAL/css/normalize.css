@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+</head>
+
+<body>
+/ *! v4.0.0 normalize.css | MIT Licença | github.com/necolas/normalize.css * /
+
+/ **
+ * 1. Alterar a família de fontes padrão em todos os navegadores (opinativo).
+ * 2. Os ajustes Impedir de tamanho da fonte após alterações de orientação em IE e iOS.
+ * /
+
+html {
+  font-family: sans-serif; / * 1 * /
+  -ms-text-size-adjust: 100%; / * 2 * /
+  -webkit-text-size-adjust: 100%; / * 2 * /
+}
+
+/ **
+ * Remover a margem em todos os navegadores (opinativo).
+ * /
+
+body {
+  margin: 0;
+}
+
+/ * Definições de exibição HTML5
+   ================================================== ======================== * /
+
+/ **
+ * Adicione a exibição correta no IE 9.
+ * 1. Adicione a exibição correta no Edge, IE e Firefox.
+ * 2. Adicione a exibição correta no IE.
+ * /
+
+artigo,
+lado,
+detalhes, / * * 1 /
+figcaption,
+figura,
+rodapé,
+cabeçalho,
+principal, / * 2 * /
+cardápio,
+nav,
+seção,
+Resumo {/ * 1 * /
+  display: block;
+}
+
+/ **
+ * Adicione a exibição correta no IE 9.
+ * /
+
+áudio,
+lona,
+progresso,
+vídeo {
+  display: inline-block;
+}
+
+/ **
+ * Adicione a exibição correta no iOS 4-7.
+ * /
+
+áudio: não ([controles]) {
+  display: none;
+  height: 0;
+}
+
+/ **
+ * Adicione o alinhamento vertical correta no Chrome, Firefox e Opera.
+ * /
+
+progresso {
+  vertical-align: baseline;
+}
+
+/ **
+ * Adicione a exibição correta no IE 10.
+ * 1. Adicione a exibição correta no IE.
+ * /
+
+Molde, / * * 1 /
+[Escondido] {
+  display: none;
+}
+
+/ * Ligações
+   ================================================== ======================== * /
+
+/ **
+ * Remover o fundo cinza em links ativos no IE 10.
+ * /
+
+uma {
+  background-color: transparent;
+}
+
+/ **
+ * Remover o contorno em links focadas quando eles também estão ativos ou pairou
+ * Em todos os navegadores (opinativo).
+ * /
+
+a: active,
+a: hover {
+  delinear-width: 0;
+}
+
+/ * Semântica em nível de texto
+   ================================================== ======================== * /
+
+/ **
+ * 1. Remova a borda inferior no Firefox 39-.
+ * 2. Adicione a decoração de texto correto no Chrome, Edge, IE, Opera e Safari.
+ * /
+
+abbr [título] {
+  border-bottom: none; / * 1 * /
+  text-decoration: underline; / * 2 * /
+  text-decoration: underline pontilhada; / * 2 * /
+}
+
+/ **
+ * Impedir a aplicação duplicado do `bolder` pela próxima regra no Safari 6.
+ * /
+
+b,
+Forte {
+  font-weight: herdar;
+}
+
+/ **
+ * Adicione o peso fonte correta no Chrome, Edge, e Safari.
+ * /
+
+b,
+Forte {
+  font-weight: mais ousado;
+}
+
+/ **
+ * Adicione o estilo da fonte correta no Android 4.3-.
+ * /
+
+dfn {
+  font-style: italic;
+}
+
+/ **
+ * Corrija o tamanho da fonte e margem sobre `elementos h1` dentro` section` e
+ * `contextos article` no Chrome, Firefox e Safari.
+ * /
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/ **
+ * Adicione o fundo e cor correta no IE 9.
+ * /
+
+mark {
+  background-color: # ff0;
+  color: # 000;
+}
+
+/ **
+ * Adicione o tamanho da fonte correta em todos os navegadores.
+ * /
+
+pequeno {
+  font-size: 80%;
+}
+
+/ **
+ * Impedir `sub` e` elementos sup` de afetar a altura da linha em
+ * Todos os navegadores.
+ * /
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/ * Conteúdo incorporado
+   ================================================== ======================== * /
+
+/ **
+ * Remover a fronteira em imagens dentro links no IE 10.
+ * /
+
+img {
+  border-style: none;
+}
+
+/ **
+ * Esconder o transbordamento no IE.
+ * /
+
+SVG: não (: root) {
+  overflow: hidden;
+}
+
+/ * O conteúdo Agrupamento
+   ================================================== ======================== * /
+
+/ **
+ * 1. Corrija a herança e dimensionamento do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o `o dimensionamento da fonte em` estranho em todos os navegadores.
+ * /
+
+código,
+kbd,
+pré,
+samp {
+  font-family: monospace, monospace; / * 1 * /
+  font-size: 1em; / * 2 * /
+}
+
+/ **
+ * Adicione a margem correta no IE 8.
+ * /
+
+a figura {
+  margin: 1em 40px;
+}
+
+/ **
+ * 1. Adicione o lado correto dimensionamento no Firefox.
+ * 2. Mostre o transbordamento em Edge e IE.
+ * /
+
+hr {
+  box-sizing: content-box; / * 1 * /
+  height: 0; / * 1 * /
+  overflow: visível; / * 2 * /
+}
+
+/ * Forms
+   ================================================== ======================== * /
+
+/ **
+ * Alterar as propriedades de fonte para `inherit` em todos os navegadores (opinativo).
+ * /
+
+botão,
+entrada,
+selecionar,
+textarea {
+  font: herdar;
+}
+
+/ **
+ * Restaurar a espessura da fonte desactivado pela regra anterior.
+ * /
+
+optgroup {
+  font-weight: bold;
+}
+
+/ **
+ * Mostrar o transbordamento no IE.
+ * 1. Mostrar o transbordamento em Borda.
+ * 2. Mostre o transbordamento em Edge, Firefox e IE.
+ * /
+
+botão,
+entrada, / * * 1 /
+selecionar {/ * 2 * /
+  overflow: visível;
+}
+
+/ **
+ * Remover a margem no Safari.
+ * 1. Remova a margem no Firefox e Safari.
+ * /
+
+botão,
+entrada,
+selecionar,
+textarea {/ * 1 * /
+  margin: 0;
+}
+
+/ **
+ * Retire a inheritence do texto transformar em Edge, Firefox e IE.
+ * 1. Remova a inheritence do texto transformar no Firefox.
+ * /
+
+botão,
+selecionar {/ * 1 * /
+  text-transform: none;
+}
+
+/ **
+ * Mude o cursor em todos os navegadores (opinativo).
+ * /
+
+botão,
+[Type = "button"],
+[Type = "reset"],
+[Type = "submit"] {
+  cursor: pointer;
+}
+
+/ **
+ * Restaurar o cursor padrão para elementos deficientes desactivado pela regra anterior.
+ * /
+
+[Desativado] {
+  cursor: default;
+}
+
+/ **
+ * 1. Impedir que um bug WebKit onde (2) destrói `audio` nativa e` video`
+ * Controles no Android 4.
+ * 2. Corrigir a incapacidade de estilo tipos clicáveis ​​no iOS.
+ * /
+
+botão,
+html [type = "button"], / * 1 * /
+[Type = "reset"],
+[Type = "submit"] {
+  -webkit-aparência: botão; / * 2 * /
+}
+
+/ **
+ * Retire a borda interna e padding no Firefox.
+ * /
+
+botão :: - moz-focus-inner,
+input :: - moz-foco interior {
+  border: 0;
+  padding: 0;
+}
+
+/ **
+ * Restaurar os estilos de foco desactivado pela regra anterior.
+ * /
+
+botão: -moz-focusring,
+Entrada: -moz-focusring {
+  esboço: 1px pontilhada ButtonText;
+}
+
+/ **
+ * Mude a fronteira, margem e preenchimento em todos os navegadores (opinativo).
+ * /
+
+fieldset {
+  border: 1px solid # c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/ **
+ * 1. Corrigir a disposição do texto no Edge e IE.
+ * 2. Corrija a herança da cor do `elementos fieldset` no IE.
+ * 3. Retire a cobertura para que os desenvolvedores não são apanhados quando zerar
+ * `Fieldset` elementos em todos os navegadores.
+ * /
+
+lenda {
+  box-sizing: Beira-box; / * 1 * /
+  color: herdar; / * 2 * /
+  display: table; / * 1 * /
+  max-width: 100%; / * 1 * /
+  padding: 0; / * * 3 /
+  white-space: normal; / * 1 * /
+}
+
+/ **
+ * Retire a barra de rolagem vertical padrão no IE.
+ * /
+
+textarea {
+  overflow: auto;
+}
+
+/ **
+ * 1. Adicione o lado correto dimensionamento no IE 10.
+ * 2. Remova o preenchimento no IE 10.
+ * /
+
+[Type = "checkbox"],
+[Type = "radio"] {
+  box-sizing: Beira-box; / * 1 * /
+  padding: 0; / * 2 * /
+}
+
+/ **
+ * Corrija o estilo de cursor de incremento e decremento botões no Chrome.
+ * /
+
+[Type = "número"] :: --interno-spin-botão webkit,
+[Type = "número"] :: - webkit-outer-spin-botão {
+  height: auto;
+}
+
+/ **
+ * Corrigir a aparência ímpar de entradas de busca no Chrome e Safari.
+ * /
+
+[Type = "search"] {
+  -webkit-aparência: campo de texto;
+}
+
+/ **
+ * Remover o preenchimento interior e botões cancelar no Chrome no OS X e
+ * Safari no OS X.
+ * /
+
+[Type = "search"] :: - webkit-search-cancelar botões,
+[Type = "search"] :: - webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+</body>
+</html>
