@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding:0;
+}
+
+.main {
+	width: 900px;
+	max-width: 1000px;		/*É aqui que muda as configurações da div, na qual todo o conteúdo está dentro dela*/
+	margin: 20px auto;
+}
+
+.slides {
+	width: 100%;	/*É aqui que modifica o tamanho do slide dentro da div*/
+}
+.slides img#passa {
+	width: 100%;
+	height: 100%;	/*É aqui que altera o tamanho das imagens em cima das numerações e ordenações*/
+}
+
+.slidesjs-pagination {
+	background: #424242;
+	list-style: none;
+	overflow: hidden;
+}
+
+.slidesjs-pagination li {
+	float: left;
+	text-decoration: none;
+}
+
+.slidesjs-pagination li a {
+	display: block;
+	padding: 7.5px 12.5px;
+	color: #fff; 
+	text-decoration: none;
+}
+
+.slidesjs-pagination li a:hover {
+	background: #000;
+	margin-bottom: 1px;
+}
+
+.slides .active {
+	background: #000;
+}
+
+.slidesjs-navigation {
+	background: #000;
+	color: #fff;
+	text-decoration: none;		/*Muda o layout da (numerações e ordenações)*/
+	display: inline-block;
+	padding: 10px 20px;
+	float: right;	
+}

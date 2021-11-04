@@ -1,0 +1,384 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	background-image:url(../img/3D.jpeg);
+}
+
+/*COMO SE FOSSE UMA LINHA DE SEPARAÇÃO ENTRE OS MENUS DISTINTOS*/
+
+/*Configuração do menu atrações turisticas(hover cinza)*/
+
+sidebar{
+	position: absolute;
+	width: 250px;
+	height: 74%;
+	margin-left: -300px;
+	background: #333;
+	color: #fff;
+	outline: 1px solid #2a2a2a;
+}
+
+.sidebar h2 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background: #2a2a2a;
+}
+
+.sidebar ul {
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+	padding: 10px;
+	margin: 10px;
+}
+
+.sidebar li {
+	font-family: 'Roboto', sans-serif;
+	outline: 1px solid #2a2a2a;
+	transition: all 0.3s;
+}
+
+.sidebar li:hover {
+	background: #444;
+	border-left: 5px solid #eee;
+}
+
+.sidebar a {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px
+}
+
+.natural{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: #eee;
+	padding: 0px;
+}
+
+.menu-bar {
+	cursor: pointer;
+}
+
+
+/*SEPARADOR DO ESTILO DA BARRA LATERAL SOCIAL*/
+.social {
+	position: fixed;
+	left: 0;
+	top: 200px;
+	z-index: 2000;
+}
+
+.social ul {
+	list-style:none;
+}
+
+.social ul li a {
+	display: inline-block;
+	color: #fff;
+	background: #000;
+	height: 50px;
+	width: 50px;
+	padding: 10px 10px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;	/*Da aquela transição que passa horizontalmente*/
+	-o-transition: all 500ms ease;		/*Efeito relativo a sobreposição da transição*/
+	transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook {background: #3b5998;}
+.social ul li .icon-twitter {background: #00abf0;}		/*fundos do icones*/
+.social ul li .icon-google {background: #d95232;}
+.social ul li .icon-mail {background: #ae181f;}
+.social ul li .icon-tumblr {background: #F96;}
+
+.social ul li a:hover {
+	padding: 10px 30px;
+	background: #000;
+}
+/*SEPARADOR DA BARRA LATERAL*/
+
+
+/*COMO SE FOSSE UMA LINHA DE SEPARAÇÃO ENTRE OS MENUS DISTINTOS*/
+
+
+/*Configuração do site*/
+
+.logo {
+	margin-top:-70px;
+	margin-left: 50px;
+	background: #000;			/*a logo aqui no caso seria aquela imagem feita no photoshop ou seja um bélo de improviso*/
+	width: 180px;
+	height: 90px;
+	border: none;
+	box-shadow: none;
+}
+
+.linha{
+	width: 1000px;		/* grid 960px */
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+	font-family: Roboto, sans-serif;
+}
+
+.coluna{
+	padding: 0 10px;
+	float: left;
+}
+.col1{
+	width: 60px;
+}
+.col2{
+	width: 140px;
+}
+.col3{
+	width: 220px;
+	background-color: #CCC;
+}
+.col4{
+	width: 300px;
+	background-color: #666;
+}
+.col5{
+	width: 380px;
+	color: #D6D6D6;
+}
+.col6{
+	width: 460px;
+	background-color: #666;
+}
+.col7{
+	width: 540px;
+	color: rgba(0,255,0,10);
+}
+
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{
+	width: 940px;
+}
+/*estilos reutizáveis*/
+.sem-padding{
+	padding: 0 !important;
+}
+.sem-margin{
+	margin: 0 !important;
+}
+h1, h2, h3, h4, h5,h6{
+	font-weight: 500;
+	margin: 15px 0 10px 0;
+	color: #ff0;
+}
+
+p{
+	color: #000;
+	font-size: 11pt;
+	font-family: 'Roboto', sans-serif;		/*Aqui configura as cores das fontes, caso haja algum problema efetuar as alterações aqui*/
+	text-align: justify;
+}
+
+p#ecf {
+	margin-top: 10px;			/*ultimo parágrafo do site*/
+}
+
+ul li, ol li{
+	margin-bottom: 5px;
+}
+ul.inline li, ol.inline li{
+	display: inline;
+	margin-right: 15px;	
+}
+ul.inline li:last child, ol.inline li:last child{
+	margin-right: 0;	
+}
+
+img{
+	max-width: 100%;
+	height: auto;				/*Trabalha diretamente com as imagens ou seja influencia em alteração que seja*/
+	border: solid 2px #000;
+	box-shadow: 2px 2px 1px 1px #666;
+	margin: 5px;
+	/* [disabled]padding: 5px; */
+}
+
+/*SEPARADOR*/
+
+/*É AQUI OK!! img#empresa*/ {
+	width: 700px;
+	height: 480px;
+	margin-left: -1px;	
+		
+	/*manipula a imagem com um palácio(depois sera trocada por uma outra imagem relacionada com a página) porém eu tirei para aliviar O CONTEÚDO, 
+	mais depois é só colocar a rashtag novamente para poder configurar*/
+
+	margin-bottom: -1px;
+	margin-top: -1px;
+	border: none;
+	box-shadow: none;
+}
+/*SEPARADOR*/
+
+
+.header{
+	background: #000;
+	height: 80px;
+	margin-top: -9px;
+	margin-left: -30px;		/*É aqui que eu posso improvisar colocando um background preto caso aconteça problemas no menu*/
+	margin-right: -30px;
+	
+}
+
+.conteudo-extra{
+	height: 550px;
+	margin-right: -10px;	/*div logo abaixo do slide no caso da home*/
+	margin-left: -9px;
+	background-color:#333;
+}
+
+form{
+	background-color: #333;
+	padding: 10px;
+	box-shadow: # CCC 10px 20px 10px 5px;
+	margin-left: 20px;
+	color: #ff0;
+	height: 700px;
+	width: 500px;
+}
+
+
+
+input, textarea {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13pt;
+	font-weight: normal;
+	background-color: rgba (255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+	background: #CCC;
+}
+
+legend {
+	color: #888888;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13pt;
+	font-weight: bold;
+}
+fieldset{
+	border: double 5px #000;
+	margin: 20px;	
+}
+
+fieldset#sexo {
+	width: 150px;
+}
+
+fieldset#usuario {
+	background-image: url(../img/icone-contato.png) no-reapet 0px 90px;
+}
+
+fieldset#endereco {
+	background-image: url(../img/icone-endereco.png) no-reapet 95% 95%;
+}
+
+fieldset#mensagem {
+	background-image: url(../img/icone-mensagem.png) no-reapet 95% 95%;
+}
+
+fieldset#pedido {
+	background-image: url(../img/icone-pagamento.png)no-reapet 95% 95%;
+}
+
+.espetaculo{
+	width: 1600px;
+	height: 492px;
+	margin-top: 5px;			/*esta divisão(div) foi desativada devido a alguns problemas de combinação, tempo, e preparação de conteúdo*/
+	margin-bottom: 10px;	
+	background-color: #666;
+}
+
+.footer {
+	background: #ccc;
+	color: #000;
+	font-weight: 100;
+}
+
+ul.notícias li {
+	clear: both;
+	display: block;
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+
+ul.notícias li img{
+	width: 70px;
+	height: auto;
+	margin-right: 10px;
+	float:left;
+}
+
+ul.notícias li h4{
+	margin: -2px 0 5px 0;	/*Essas ul configuram os parâmetros das imagens selecionadas nas listas da notícia que no caso não tem nenhum efeito*/
+	font-weight: 500;	
+}
+ul.notícias li p{
+	margin: 5px 0;
+	font-weight: 300;
+}
+ul.noticias li p a{
+	font-weight:500;
+}
+
+div#listfooter {
+	width: 500px;
+	height: 30px;						/*Aqui a configuração da div onde estão as listas é "listfooter"*/
+	padding: 5px;
+	opacity: 1.1;
+}
+
+ul li#lisfoo {
+	font-size: 10pt;
+	font-weight: normal;
+	margin-left: 10px;							/*Aqui a configuração das listas dentro da (div) é "lisfoo"*/
+	list-style: none;
+	margin-bottom: 10px;
+	box-shadow: rgba (0,0,0.6,0);
+	cursor: pointer;
+	float: left;
+}
+ul li#lisfoo a{
+	text-decoration: none;
+	color: #666;
+}
+ul li#lisfoo a:hover {
+	background: #333;
+	color: #000;
+	transition: 1s linear;
+	text-decoration: underline;
+}
+
+fieldset#con {
+	background-color: #CCC;
+	padding: 5px 2px 2px 2px;
+	border: solid;							/*Trata da field logo abaixo do slide na página home*/
+	width: 580px;
+	text-indent: 10px;
+}

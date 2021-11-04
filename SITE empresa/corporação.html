@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>InfoEasy corporation</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/estiloprincipal.css" />	<!--ESTILO COMPLETO DO SITE-->
+<link rel="stylesheet" href="css/estilomenu.css"  />
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="Estilos botões sociais/style.css" /><!--ESTILO DOS ICONES SOCIAIS NA LATERAL-->
+
+
+
+<script src="jquery/jquery-1.12.3.min.js"></script>
+<script src="jquery/jquery.slides.min.js"></script>
+<script src="js/jquery.slides.js"></script>
+
+<script>
+	$(function(){
+      $ ( ".slides" ) .slidesjs ({
+       	play: {
+			active: true,
+			effect: "slides",
+			interval: 10000,
+			fx: 'fade',
+			auto: true,
+			swap: true,
+			pauseOnHover: false,
+			restarDelay: 2500	
+		}	
+      });
+    });
+</script>
+<style>
+	
+img#corporativas {
+	width: 250px;
+	height: 250px;
+	border: solid 5px #fff;
+	box-shadow: 2px 2px 1px 4x #F00;	/*Manipulam as imagens da página corporação*/
+	background-color: #ddadada;
+	padding: 10px;
+}
+
+img#diversão {
+	margin-top: -30px;
+	margin-left: 60px;
+	width: 270px;
+	height: 250px;
+	padding: 10px;
+	border: solid 5px #fff;
+	box-shadow: 2px 2px 1px 4x #F00;	/*Manipula a imagem fun ou diversão mais no que dis respeito ao objeto dentro da (divrecolocar) é bom se ligar néssa parada*/
+	background-color: #ddadada;
+	
+}
+
+fieldset#ração {
+	background-color: #CCC;
+	padding: 5px 2px 2px 2px;
+	border: solid;							/*Trata da field em cima das imagens corporativas "ração" é corpo(ração) tentei simplificar */
+	width: 790px;
+	text-indent: 10px;
+	color: #666;
+}
+
+fieldset#ração:hover {
+	background: #000;
+	opacity: 0.9;
+	font-family: "Comic Sans MS", cursive;		/*se é loko cachorreira o efeito que eu fis ficou muito louco = referente ao encolhimento e mudança de font gradativa na field corporação*/
+	font-size: 10pt;
+	transition: all 2s ease;
+}
+
+img#logocorpo {
+	width: 180px;
+	height: 90px;
+	margin-left: 50px;
+	margin-top: -860px;		/*configuração da logo o alinhamento*/
+	border: none;
+	box-shadow: none;
+}
+
+div#recolocar {
+	margin-top: -300px;					/*essa daqui a imagem que eu estava tendo problemas kkk maldita fun ( diversão )*/
+	background-color: #ddadada;
+	height: 300px;
+	width: 460px;
+	box-shadow: 2px 2px 1px 4x #F00;
+}
+</style>
+</head>
+
+<body>	
+	<div class="header">
+    	<div class="linha">
+        	<header>
+            	<div class="coluna col4">
+                
+                </div>
+                <div class="coluna col8">
+                	<nav>
+                    		<ul>
+                                <li><a href="index.html" target="_blank"><span class="primeiro"><i class="icon icon-home"></i></span>Home</a></li>
+                                <li><a href="corporação.html" target="_blank"><span class="segundo"><i class="icon icon-book"></i></span>Corporation</a>
+                        			<ul>
+                                        <li><a href="missões.html" target="_blank">Missions</a></li>
+                                        <li><a href="visões.html" target="_blank">Visions</a></li>
+                                        <li><a href="valores.html" target="_blank">Values</a></li>
+                        			</ul>
+                    			</li>
+                                <li><a href="serviços.html" target="_blank"><span class="terceiro"><i class="icon icon-spanner-outline"></i></span>Services</a></li>
+                                <li><a href="sobre.html" target="_blank"><span class="quarto"><i class="icon icon-group"></i></span>About</a></li>
+                                <li><a href="contato.html" target="_blank"><span class="quinto"><i class="icon icon-phone"></i></span>Contact</a></li>
+                			</ul>
+                    	</nav>
+                	</div>
+    			</header>
+			</div>
+		</div>
+        <div class="linha">
+        	<section>
+            	<fieldset id="ração">
+            	<h2><center>Corporation</center></h2>
+                </fieldset>
+                <div class="coluna col6">
+                	<h4>Facade</h4>
+                    <img id="corporativas" src="img/FACHADA.jpg">	<!--A identificação está corporativa porque a vélha mandou eu tirar as imagens anteriores então prefire não mudar a "ID" para ser mais rápido-->
+                    <!--Nossa fachada apresenta um estimulo inovador,de uma empresa vencedora e diversificada.--><br />
+                    </p><br /><br /><br />
+                </div>
+                <div class="coluna col4 sidebar">
+                	<h4>Development</h4>
+                    <img id="corporativas" src="img/desenvolver.jpg" />
+                    <!--Nossa área de desenvolvimento abranje 2 andares inteiros, para que o nosso funcionário se sinta a vontade e que possa dar o melhor de sí, e consequentemente aumentar tanto a ( sua ) quanto a "produtividade" da empresa.--><br />
+                    </p>
+                </div>
+                <div class="coluna col4 sidebar">
+                	<h4>Flexibility</h4>
+                    <img id="corporativas" src="img/flexivel.jpg" />
+                    <!--O avanço de ferramentas e tecnologias que possibilitam às pessoas trabalhar de qualquer lugar, via Internet e dispositivos móveis, está mudando a cultura organizacional contemporânea. Hoje, nossa empresa quer valorizar e reter nossos talentos procurando oferecer um ambiente de trabalho mais despojado, e mais flexível com horários e vestimentas, com ambientes de lazer e leitura, entre outras alternativas.--><br />
+                    </p>
+             	</div>
+                <div id="recolocar" class="coluna col4 sidebar">
+                	<h4>Fun</h4>
+                    <img id="diversão" src="img/diversão 2.jpg"/>
+                    <!--Em nosso ambiente reservado para diversão, está resguardado um tempo suficiente em que o funcionário poderá descontrair-se, caso esteja com vontadade de parar e possivelmente voltar a produzir com qualidade, favorecendo nossa empresa em prol do crescimento profissional.--><br />
+                    </p>
+                </div>           
+
+            </section>
+       </div>
+                       	<img id="logocorpo" src="MURO_03.png">	<!--logo coloquei aqui porque estava atrapalhando o menu, portanto desconfigurava automaticamente-->
+
+       <div class="social">
+        	<ul>
+            	<li><a href="https://www.facebook.com/InfoEasy07/" class="icon-facebook" target="_blank"></a></li>
+                <li><a href="http://www.gmail.com" class="icon-google" target="_blank"></a></li>
+                <li><a href="http://www.email.com" class="icon-mail" target="_blank"></a></li>
+                <li><a href="http://www.twitter.com" class="icon-twitter" target="_blank"></a></li>
+                <li><a href="http://www.tumblr.com" class="icon-tumblr" target="_blank"></a></li>
+            </ul>
+        </div>
+        
+       <div class="conteudo-extra">
+       		<div class="linha">
+            	<div class="coluna col7">
+                	<section>
+                    	<h2>corporate reflections</h2>
+                        <p>Our employees assume that hardly anyone will be excellent , on the other hand ; who is encouraged to improve on what is already good can go far.</p>
+                        <!--Nossos funcionários partem do princípio de que dificilmente alguém será excelente, por outro lado; quem for estimulado a melhorar no que já é bom pode ir longe.-->
+                      	<img src="img/proftecno.jpg" />
+                    </section>
+                </div>
+                <div class="coluna col5">
+               
+                    <ul class="sem-marcador sem-padding notícias"> 	<!--talvez possa colocar algo aqui-->
+                    </ul>
+       
+                </div>
+             </div>
+       </div>
+       <div class="footer">
+       		<div class="linha">
+                <footer>
+                	<div class="coluna col12">
+                    	<div id="listfooter">	<!--Aqui a configuração da div onde estão as listas é "listfooter"-->
+                    		<center><ul>           
+                                <li id="lisfoo"><a href="politica de privacidade.html" target="_blank">privacy policy</a></li>
+                        	</ul></center>
+                        </div>
+                    	<span><center>&copy; 2016 - InfoEasy Copyright - All rights reserved</center></span>
+                        <p id="ecf">This website is best viewed in Microsoft Explorer versions 9 or latest versions of Google Chrome and Mozilla Firefox browsers.</p>
+                    </div>			<!--Esse website é melhor visualizado nas versões Microsoft Explorer 9 ou últimas versões dos navegadores Google Chrome e Mozila Firefox.-->
+                </footer>
+            </div>
+       </div>                         
+</body>
+</html>

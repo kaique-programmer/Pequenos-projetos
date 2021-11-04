@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{
+    color:#30F;
+	font-style:italic;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	
+}
+.voltar {
+		width:200px;
+		height:100px;
+		background-color:#CF0;
+		margin:20px;
+		border-color:#F33;
+		float:left;
+		
+	}
+.pagina{
+	width:1360px;
+	height:1000px;
+	background-color:#00F;
+	padding:20px;
+	}
+
+.home{
+	width:200px;
+	height:100px;
+	background-color:#090;
+	border:double #6633FF;
+	float:left;
+	
+}
+
+.contato{
+    width:200px;
+	height:100px;
+	background-color:#C00;
+	border:double #339933;
+	margin-left:20px;
+	float:left;
+}
+
+.localizacao{
+	width:200px;
+	height:100px;
+	background-color:#FF0;
+	border:double #CCCC33;
+	margin-left:20px;
+	float:left;
+}
+.formulario{
+	width:890px;
+	height:990px;
+	background-color:#696;
+	margin-left:20px;
+	float:left;
+}
+.foto{
+	width:192px;
+	height:180px;
+	background-color:#3ED353;
+	float:inherit;
+	padding:40px;
+}
+
+.s{
+elevation:above;	
+background-color:#A8E1F5;	
+width:200px;
+heigth:200px;
+widows:inherit;
+}

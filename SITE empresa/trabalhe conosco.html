@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>work with us</title>
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!--Normalizações do estilo CSS arquivo baixado da internet-->
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'> <!--Fontes na qual estou tralhando-->
+
+<link rel="stylesheet" type="text/css" href="css/estiloprincipal.css" /> <!--ESTILO COMPLETO DO SITE-->
+
+<link rel="stylesheet" href="css/estilomenu.css"  /><!--ESTILO DO MENU COM CORES DIFERENTES-->
+
+<link rel="stylesheet" href="Estilos botões sociais/style.css" /><!--ESTILO DOS ICONES SOCIAIS NA LATERAL-->
+
+<link rel="stylesheet" href="css/fonts.css"  /><!--ESTILO DOS ÍCONES PELA QUAL ESTÁ INSERIDA NOS LINKS PRINCIPAIS (ÍNICIO,CLIENTE,SERVIÇOS ..)DO SITE -->
+
+<link rel="stylesheet" href="css/css do slide/css do slide.css" /><!--ESTILO DO SLIDE CENTRAL-->
+<link rel="stylesheet" href="css/css do slide/estilo font.css" /><!--ESTILO DO SLIDE CENTRAL REFERENTES AOS BOTÕES-->
+
+<style>
+img#logotb {
+	margin-top:-60px;
+	margin-left: 50px;
+	background: #000;			/*logo configurada para ficar no seu devido lugar*/
+	width: 180px;
+	height: 90px;
+	border: none;
+	box-shadow: none;
+}
+
+form#organizar {
+	background-color: #333;
+	padding: 10px;
+	box-shadow: # CCC 10px 20px 10px 5px;
+	margin-left: 400px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	color: #ff0;
+	height: 1510px;
+	width: 700px;
+}
+
+
+
+input, textarea {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13pt;
+	font-weight: normal;
+	background-color: rgba (255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+	background: #CCC;
+}
+
+legend {
+	color: #888888;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13pt;
+	font-weight: bold;
+}
+fieldset{
+	border: double 5px #000;
+	margin: 20px;	
+}
+
+fieldset#sexo {
+	width: 150px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="header">
+    	<div class="linha">
+        	<header>
+            	<div class="coluna col4">
+                </div>
+                <div class="coluna col8">
+                	<nav>
+                    		<ul>
+                                <li><a href="index.html" target="_blank"><span class="primeiro"><i class="icon icon-home"></i></span>Home</a></li>
+                                <li><a href="corporação.html" target="_blank"><span class="segundo"><i class="icon icon-book"></i></span>Corporation</a>
+                        			<ul>
+                                        <li><a href="missões.html" target="_blank">Missions</a></li>
+                                        <li><a href="visões.html" target="_blank">Visions</a></li>
+                                        <li><a href="valores.html" target="_blank">Values</a></li>
+                        			</ul>
+                    			</li>
+                                <li><a href="serviços.html" target="_blank"><span class="terceiro"><i class="icon icon-spanner-outline"></i></span>Services</a></li>
+                                <li><a href="sobre.html" target="_blank"><span class="quarto"><i class="icon icon-group"></i></span>About</a></li>
+                                <li><a href="contato.html" target="_blank"><span class="quinto"><i class="icon icon-phone"></i></span>Contact</a></li>
+                			</ul>
+                    	</nav>
+                	</div>
+    			</header>
+			</div>
+		</div>
+         
+ 
+                      <img id="logotb" src="MURO_03.png">	<!--logo coloquei aqui porque lá em cima nas colunas não dava, devido a logo atrapalhar o menu e desconfigurar-lo automaticamente-->
+
+        <div class="social">
+        	<ul>
+            	<li><a href="http://www.facebook.com/InfoEasy07/" class="icon-facebook" target="_blank"></a></li>
+                <li><a href="http://www.gmail.com" class="icon-google" target="_blank"></a></li>
+                <li><a href="http://www.email.com" class="icon-mail" target="_blank"></a></li>
+                <li><a href="http://www.twitter.com" class="icon-twitter" target="_blank"></a></li>
+                <li><a href="http://www.tumblr.com" class="icon-tumblr" target="_blank"></a></li>
+            </ul>
+        </div>
+<form id="organizar" method="post" id="fContato" action="mailto:contato@infoeasy.com" onclick="calc_total();">
+    <fieldset id="usuario"><img src="img/icone-contato.png" style="border: none; box-shadow: none;" /><legend>User ID</legend> 
+    	<p><label for="cNome">Complete Name:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="complet name"/></p>
+    	<p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="30" placeholder="typing your E-mail"</p>
+    	<fieldset id="Sexo"><legend>sex:</legend>
+        <input type="radio" name="tsexo" id="cMasc" checked="checked" /><label for="cMasc">Male</label><br />
+        <input type="radio" name="tsexo" id="cFem" /><label for="cFem">Female</label></fieldset>
+    	<p>date of birth:<input type="date" name="tNasc" id="cNasc" /></p>
+	</fieldset>
+    
+	<fieldset id="endereco"><img src="img/icone-endereco.png" style="border: none; box-shadow: none;" /><legend>User address</legend>
+    	<p><label for="cRua">Public place:</label> <input type="text" name="tRua" id="cRua" size="35" maxlength="30" placeholder="Street,Av,bridge,viaduct," /></p>
+    	<p><label for="cNum">Number residential and mobile:</label> <input type="number" name="tNum" id="cNum" min="0" max="1000" /></p>
+    	<p><label for="cEst">state:
+        	<select name="tEst" id="cEst"></p>
+        		
+                <optgroup label="Região Norte">
+                	<option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="AC">Acre</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AP">Amapá</option>
+                    <option value="RR">Roraíma</option>
+                    <option value="TO">Tocantis</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                	<option value="MA">Maranhão</option>
+                	<option value="PI">piauí</option>
+                	<option value="CE">ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="AL">Alágoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+                
+                <optgroup label="Região Sudeste">
+                	<option value="SP" selected="selected">São Paulo</option>
+                	<option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                
+                <optgroup label="Região Centro-Oeste">
+                	<option value="MT">Mato Grosso</option>
+                	<option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goiás</option>
+                </optgroup>
+                
+                <optgroup label="Região Sul">
+                	<option value="PR">Parána</option>
+                	<option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+             </select>
+    	<p><label for="cCid">City:</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua cidade" list="cidades" /></p>
+        <datalist id="cidades">
+        	<option value="São Paulo"></option>
+            <option value="Campinas"></option>
+            <option value="Santo André"></option>
+        </datalist>
+	</fieldset>
+	
+    <fieldset id="historicop"><!--historico profissional--><legend>Professional historic</legend> 
+        <p><label for="cSal">Salary last		</label><input type="text" size="20" maxlength="20" placeholder="enter your last salary"></p><br />
+        <p><label for="cNPossuiEx"><!--Não possui experiência--></label><input type="checkbox" />I do not have professional experience</p>
+        <p><label for="cPossuiEx"></label><input type="checkbox" />It has experience</p>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="enter all your experiences"></textarea>
+    </fieldset>
+    
+    <fieldset id="objetivop" style="height: 50px;"><!--objetivo profissional é abreviação--><legend>Professional Objectiv</legend>
+    	<select>
+    		<optgroup label="Carreiras">
+                <option value="Objetivo">Programmer WEB</option>
+        		<option value="objetivo">Developer software Desktop</option>
+       			<option value="Objetivo">Analyst SEO</option>
+            </optgroup>
+    	</select>
+    </fieldset>
+	
+    <fieldset id="mensagem"><img src="img/icone-mensagem.png" style="border: none; box-shadow: none;" /><legend>Professional Resume:</legend>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Put your message here"></textarea>
+        </p>
+	</fieldset>
+    
+			<input type="image" src="img/botao-enviar.png"/>
+</form>
+        
+       <div class="footer">
+       		<div class="linha">
+            	<footer>
+                	<div class="coluna col12">
+                    	<div id="listfooter">	<!--Aqui a configuração da div onde estão as listas é "listfooter"-->
+                    		<center><ul>
+                            	<li id="lisfoo"><a href="trabalhe conosco.html" target="_blank">work with us</a></li>
+                                <li id="lisfoo"><a href="politica de privacidade.html" target="_blank">privacy policy</a></li>
+                        	</ul></center>
+                        </div>
+                    	<span><center>&copy; 2016 - InfoEasy Copyright - All rights reserved</center></span>
+                        <p id="ecf">This website is best viewed in Microsoft Explorer versions 9 or latest versions of Google Chrome and Mozilla Firefox browsers.</p>
+                    </div>			<!--Esse website é melhor visualizado nas versões Microsoft Explorer 9 ou últimas versões dos navegadores Google Chrome e Mozila Firefox.-->
+                </footer>
+            </div>
+       </div> 
+</body>
+</html>

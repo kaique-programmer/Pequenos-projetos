@@ -1,0 +1,212 @@
+<html>
+<head>
+<title><strong>Cadastro</strong></title>
+<style>
+ .cadastro{
+ 	 width:1200px;
+	 height:900px;
+	 background-color:#CCC;
+	 padding-left:30px;
+	 border:solid #000 5px;
+
+ }
+
+ .table{
+    border:double 5px #000000;
+    height:650px;
+    width: 700px;
+    margin-left:280px;
+ }
+ 
+ td#format {
+	margin-left: -5px;
+	margin-right: 5px;
+	padding: -5px;
+}
+
+table#segunda {
+	margin-left: 2px;
+	margin-right: 3px;
+	margin: 1px;
+	left: 0px;	
+}
+
+ .img{
+	 width:40px;
+	 height:20px;
+ }
+ .botao{
+background-color:#CCC;
+color: #000000;
+font-size: 12px;
+border-radius:10px;
+padding:10px;
+float:right;
+text-justify:inter-word;
+ }
+	 
+</style>
+
+</head>
+<body>
+<div class="img">
+
+<div class="Cadastro">
+<h1> 
+  <p align=center>Your Trip Our Work</center></p> 
+</h1>
+
+</br> </br> 
+
+<div class="table">
+
+<table align=center>
+ <h2> 
+   <p align=center>About You</center></p>
+ </h2>
+  
+<tr>
+    <td>First Name</td>
+    <td><input type="text" name="nome"/></td>
+    <td>Last Name</td>
+    <td><input type="text" name="nome"/></td>
+   
+   
+</tr>
+
+<tr>
+    <td>Date of Birth</td>
+    
+      <td> <select name="Mes">
+           <option value="Select">Month</option>
+            <script>
+			    for(x=01;x<=12;x++){
+				document.write("<option value="+x+">"+x+"</option>");
+			    }
+		    </script>
+            
+      </select>
+      <select name="Dia">
+            <option value="Select">Day</option>
+            <script>
+			    for(x=01;x<=31;x++){
+				document.write("<option value="+x+">"+x+"</option>");
+			    }
+		    </script>
+      </select>
+      <select name="Ano2">
+        <option value="Select">Year</option>
+        <script>
+			      for(x=1920;x<=2016;x++){
+				  document.write("<option value="+x+">"+x+"</option>");
+			      }
+		      </script>
+      </select></td>
+       <td>Gender</td>
+    <td><select name="sex"> 
+        <option value="M">Male</option> 
+        <option value="F">Female</option></select> 
+    </td>
+           
+
+</tr>
+
+<tr>
+    <td>Home </br>Phone</td>
+    <td><input type="text" name="Telefone Residencial"/></td>
+    <td>Mobile </br>Phone</td>
+    <td><input type="text" name="Telefone Celular"/></td>
+</tr>
+
+
+<tr>
+    <td>RG</td>
+    <td><input type="text" name="RG:" size="9" maxlength="11"/></td>
+    <td>CPF</td>
+    <td><input type="text" name="CPF:" size="9" maxlength="11"/></td>
+</tr>
+
+<tr>
+      <td>Nationality</td> 
+      <td><input type="text" name="nacionalidade"></td>
+      
+    <td>Email Address</td>
+    <td><input type="text" name="E-mail" size="20" maxlength="30"/></td>
+    
+</tr>
+
+</table>
+<table id="segunda">
+<h2> 
+   <p align=center>Address</center></p>
+ </h2>
+<tr>
+    <td id="format">Country
+    <input type="text" name="Pais"></td>
+    <td id="format">State
+    <input type="text" name="Estado"></td>
+  
+   
+</tr> 
+
+<tr align="center">
+    <td>Street 
+        <input type="text" id="formata" name="rua"></td>
+    <td>Number <input type="text" id="formata" name="numero"></td>
+   
+</tr>
+
+<tr>
+   
+    <td>Zip code
+    <input type="text" name="cep" size="5" maxlength="5"></td>    
+</tr> 
+</table>
+<table id="terceira" align="center">
+    <h2>
+      <p align=center>Form Of Payment</p>
+    </h2>
+    <tr>
+      <td>Name on Card
+      <input type="text" name="nome do cartão"</td>
+    </tr>
+    <tr>
+      <td>Card Number
+      <input type="text" name="Cartão"/>
+      <img src="imgs/visa.master" class="img"> <img src="imgs/american" class="img"><img src="imgs/diners" class="img"></td>
+    </tr>
+    <tr>
+      <td>Expiration Date
+      <select name="Mês" >
+        <option value="Select">Month</option>
+        <script>
+			    for(x=01;x<=12;x++){
+				document.write("<option value="+x+">"+x+"</option>");
+			    }
+		   </script>
+      </select>
+      <select name="Ano">
+        <option value="Select">Year</option>
+        <script>
+			      for(x=2016;x<=2030;x++){
+				  document.write("<option value="+x+">"+x+"</option>");
+			      }
+		      </script>
+      </select></td>
+    </tr>
+    <tr>
+      <td>Security Code    
+        <input type="text" name="Código de Segurança"></td>
+    </tr>
+    <tr>
+    </tr>
+  </table>
+
+
+<input type="button" value="Finalizar Compra" class="botao" align="right">
+
+</div>
+</div>
+
+</body>
+</html>
